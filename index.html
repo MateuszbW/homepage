@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Przypominajka WTF</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!--czcionka nagłówka-->
+    <link href='http://fonts.googleapis.com/css?family=Akaya+Kanadaka&subset=latin,latin-ext' rel='stylesheet'
+        type='text/css'>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a id="linki" href="index.html"> Strona główna</a>
+            <a id="linki" href="przydatne-linki.html"> Przydatne linki</a>
+            <a id="linki" href="pomoc-css.html">Stylowanie CSS</a>
+        </nav>
+    </header>
+    <main>
+
+
+        <header>
+            <h1 id="top">Przypominajka WTF</h1>
+        </header>
+
+
+        <section>
+            <h2>Rada na początek</h2>
+
+            <p> <strong>Po pierwsze primo:</strong> sumienność, staraj się codziennie poświęcić nauce 2h, dłuższe
+                przerwy szczegółnie na
+                poczatku kursu powodują iż zapominasz co jest 5 i trudniej się odnaleźć. Wiem z autopsji.</p>
+            <p> <strong>Po drugie:</strong> jeśli masz czas obejrz do końca i dopiero rób pracę domową. <br>Dzięki temu
+                jeśli jesteś wzrokowcem
+                zyskujesz łatwiejsze utrwalenie informacji i łatwiej przemyśleć w jaki sposób będziesz konfigurować
+                swoją stronę. </p>
+            <p> <strong>Po trzecie:</strong> eksperymentuj, nie staraj się kopiować kropka w kropkę materiału z filmów,
+                wymyśl co chcesz
+                wrzucić na stronę.<br> Edytuj na swoje sposoby i dodawaj zmiany o których nie wspominano w kursie
+                (szukaj w
+                necie).</p>
+            <p><strong>Po czwarte:</strong> Rób notatki w zeszycie. To dodatkowy
+                sposób na utrwalenie.</p>
+            <p><strong>Po piąte:</strong> wyłącz TV, odstaw na bok fona, zwierzaka i inne rozpraszacze
+                LENIU!</p>
+            <img src="rozumiesz.png" alt="mr-bean" />
+        </section>
+
+
+        <section>
+            <h2>Przy otwarciu czystego dokumentu zacznij od:</h2>
+
+            <p>W arkuszu html wpisz znak "!" a następnie tab</p>
+            <p>Po tym pamiętaj by zmnienić język w jakim będzie wyświetlany tekst strony, tą możliwość znajdziesz tutaj:
+                &lt; html lang="pl"&gt; <strong>domyślnie nie będzie to "pl"</strong> .</p>
+            <p> W nagłówku &lt; head &gt; możesz wpisać:
+                <strong>&lt; link href="style.css" rel="stylesheet" type="text/css"&gt; </strong>,
+                jest to odnośnik do arkusza stylów css w którym to będziemy dbali o to jak wyglda
+                nasza strona.
+            </p>
+        </section>
+
+
+        <section>
+            <h2>Struktura pisania w HTML- początek</h2>
+            <em>Ogólnie html jest prosty jak wydanie 2mld zł na tvp</em>
+            <h3>Podstawowa wiedza:</h3>
+            <p>
+                &lt; body &gt; wszystko co chcemy wyswietlic na stronie musi być umieszczone w tym znaczniku
+            </p>
+            <p>
+                &lt; main &gt; jest to główna część/treść naszej strony, ona stanowi priorytet przy wyświetlaniu na
+                przeglądarkach
+            </p>
+            <p>
+                &lt; header &gt; może stanowić nagłówek dokumentu, logo itp, czyli element mający rzucać się w oczy,
+                wewnątrz niego umieszczamy zazwyczaj &lt; h1 &gt; NAGŁÓWEK &lt; /h1 &gt;
+            <p>-dodając header pod main będzie on rozpatrywany przez przeglądarkę</p>
+            <p> -dodając go przed &lt; /main &gt; wyszukiwarki nie będą go analizować, przykładowo można go użyć jako
+                przyscisk powrotu do strony głównej</p>
+            <p>
+                &lt; section &gt; sekcje dokumentu (części podziału strony)
+            </p>
+            <p>
+                &lt; article &gt; samodzielna treść/część strony
+            </p>
+            <p>
+                &lt; h1 &gt; nagłówek pierwszego poziomu, najniższym jest h6
+            </p>
+            <p>
+                &lt; p &gt; paragraf/akapit, tekst główny umieszczony np. pod nagłówkami
+            </p>
+            <p>
+                &lt; footer &gt; stopka dokumentu/strony, najlepiej przed &lt; /main &gt; tak jak w przypadku header
+
+            </p>
+        </section>
+
+
+
+
+
+    </main>
+
+
+    <footer>
+        Jest to stopka strony, kiedyś coś tu napiszę. <a href="#top"> Wróć na górę strony</a>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

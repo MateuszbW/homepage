@@ -1,0 +1,91 @@
+body{
+    background:#CED0CE;
+}
+h1 {
+    color: blue;
+    font-family: 'Akaya Kanadaka', sans-serif;
+    font-size: 60px;
+    /*grubość czcionki*/
+    font-weight: 900; 
+    text-align: left;
+    text-align: center;
+
+
+}
+h2 {
+    color: #F15025;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 40px; /*rozmiar czcionki*/
+    font-weight: 700; /*grubość czcionki*/
+    text-align: left;
+
+
+
+}
+h3{
+    color:#0c0842;
+    font-family: 'Lucida Sans Unicode';
+    font-size: 20px; /*rozmiar czcionki*/
+    font-weight: 700; /*grubość czcionki*/
+    text-align: left;
+    
+
+h4{
+
+}
+h5{
+
+}
+h6{
+
+}
+
+
+p {
+    color: black;
+    margin-bottom: 0;
+    text-indent: 1.5em;
+    
+}
+
+
+
+p + p {
+    text-indent: 1.5em;
+    margin-top: 0
+}
+
+
+
+footer{
+color: gray;
+}
+
+
+
+#top {
+    color: #190933;
+
+}
+
+
+
+a {
+    color: black
+}
+
+
+
+#linki {
+    color: #0077B6;
+}
+
+
+}
+#photo {
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+    
+    
+}
