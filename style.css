@@ -1,6 +1,7 @@
 body{
     background:#CED0CE;
 }
+
 h1 {
     color: blue;
     font-family: 'Akaya Kanadaka', sans-serif;
@@ -9,40 +10,29 @@ h1 {
     font-weight: 900; 
     text-align: left;
     text-align: center;
-
-
 }
+
+
 h2 {
     color: #F15025;
     font-family: 'Lucida Sans Unicode';
     font-size: 40px; /*rozmiar czcionki*/
     font-weight: 700; /*grubość czcionki*/
     text-align: left;
-
-
-
 }
+
+
 h3{
     color:#0c0842;
     font-family: 'Lucida Sans Unicode';
     font-size: 20px; /*rozmiar czcionki*/
     font-weight: 700; /*grubość czcionki*/
     text-align: left;
-    
-
-h4{
-
-}
-h5{
-
-}
-h6{
-
 }
 
 
 p {
-    color: black;
+    color: black ;
     margin-bottom: 0;
     text-indent: 1.5em;
     
@@ -64,28 +54,64 @@ color: gray;
 
 
 #top {
-    color: #190933;
+    color: #1f0746;
 
 }
 
 
 
 a {
-    color: black
+    color: rgb(17, 185, 87)
 }
 
 
 
 #linki {
-    color: #0077B6;
+    color: rgb(6, 6, 124);
 }
 
 
-}
 #photo {
     margin: 0 auto;
     display: block;
-    width: 20%;
-    
-    
+    width: 20%;    
 }
+
+.box1{
+    background: rgba(194, 239, 179, 1);    
+    width: 95%;
+    min-height: 200px;   
+     
+   
+   
+}
+
+
+.box2{
+    background: rgba(88, 164, 176, 0.6);     
+    display: inline-block; /*; ------jeżeli np: masz kilka pudełek to ustawia je od lewej do prawej do samego dołu */
+    overflow: auto; /*dokłada nam scroll w boxie*/
+    height: 200px;
+    width: 200px;
+    padding: 20px ; /*np. wyświetla teksy z marginesem w pierwszym pudełku. Góra, prawo, dół, lewo, można też dać dwie wartości wtedy bedzie to góra-dół, prawo-lewo*/
+    border-width: 2px; /*ramka boxu*/
+    border-style: solid; /*obramowanie stałe*/
+    border-color: white; 
+    border-radius: 5px; /*promień narożników ramki, można zrobić pełne kółko dając 50%*/
+    margin: 10px 10px 10px 10px ; /* margin: 10px auto; ---odpycha wszystko co na zewnątrz o wartość*/    
+          
+}
+
+.box3{
+    background: rgba(88, 164, 176, 0.6);     
+    display: inline-block;
+    overflow: auto;    
+    padding: 20px ;
+    border-width: 2px; 
+    border-style: solid; 
+    border-color: white; 
+    border-radius: 5px; 
+    margin: 10px 10px ;   
+          
+}
+
