@@ -59,15 +59,28 @@ color: gray;
 }
 
 
-
-a {
-    color: rgb(17, 185, 87)
-}
-
-
-
 #linki {
-    color: rgb(6, 6, 124);
+    color: white;
+    margin: 10px 10px;
+    
+   
+}
+.link-box{
+    position: fixed;
+    display:inline-block;
+    box-sizing: border-box;       
+    background: black;
+    top: 2px;
+    width: 400px;
+    height: 25px;
+    padding: 2px;
+    z-index: 1000;    
+    border-width: 2px;
+    border-style: solid;
+    border-color: #cf8516; 
+    border-radius: 1px;
+    margin: 0px 2px; 
+
 }
 
 
@@ -79,11 +92,8 @@ a {
 
 .box1{
     background: rgba(194, 239, 179, 1);    
-    width: 95%;
-    min-height: 200px;   
-     
-   
-   
+    width: 100%;
+    min-height: 100px;  
 }
 
 
@@ -91,15 +101,17 @@ a {
     background: rgba(88, 164, 176, 0.6);     
     display: inline-block; /*; ------jeżeli np: masz kilka pudełek to ustawia je od lewej do prawej do samego dołu */
     overflow: auto; /*dokłada nam scroll w boxie*/
-    height: 200px;
-    width: 200px;
+    box-sizing: border-box; /*ustawiam wartości bordera, tak by nie musiec sumować pikseli */
+    height: 250px;
+    width: 250px;
     padding: 20px ; /*np. wyświetla teksy z marginesem w pierwszym pudełku. Góra, prawo, dół, lewo, można też dać dwie wartości wtedy bedzie to góra-dół, prawo-lewo*/
     border-width: 2px; /*ramka boxu*/
     border-style: solid; /*obramowanie stałe*/
     border-color: white; 
     border-radius: 5px; /*promień narożników ramki, można zrobić pełne kółko dając 50%*/
     margin: 10px 10px 10px 10px ; /* margin: 10px auto; ---odpycha wszystko co na zewnątrz o wartość*/    
-          
+    margin-left: min(5px, 5%);
+                     
 }
 
 .box3{
@@ -111,7 +123,17 @@ a {
     border-style: solid; 
     border-color: white; 
     border-radius: 5px; 
-    margin: 10px 10px ;   
-          
+    margin: 10px 10px ;             
 }
+
+.box4{
+    background: white;     
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-width: 2px; 
+    border-style: solid;     
+    margin: 2px 2px ;             
+}
+
 
