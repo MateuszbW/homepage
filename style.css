@@ -67,16 +67,26 @@ footer {
 
 .box1 {
   background: rgba(194, 239, 179, 1);
+  box-sizing: border-box;
   width: 100%;
-  min-height: 270px;
+  min-height: 100px;
+  display: flex;
+  
 }
 
 .box2 {
   background: rgba(88, 164, 176, 0.6);
+  box-sizing: border-box;
   height: 250px;
   width: 250px;
   margin: 10px auto 10px auto;
   display: inline-block;
+  overflow: auto;
+  border: 3px solid rgba(42, 126, 139, 0.6);
+  border-radius: 5px;
+  padding: 20px ;
+
+  
 }
 
 .box3 {
@@ -84,9 +94,9 @@ footer {
   display: inline-block;
   overflow: auto;
   padding: 20px;
-  border-width: 2px;
+  border-width: 3px;
   border-style: solid;
-  border-color: white;
+  border-color: rgba(42, 126, 139, 0.6);
   border-radius: 5px;
   margin: 10px auto 10px auto;
 }
