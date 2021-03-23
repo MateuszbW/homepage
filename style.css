@@ -1,139 +1,108 @@
-body{
-    background:#CED0CE;
+body {
+  background: #ced0ce;
 }
 
 h1 {
-    color: blue;
-    font-family: 'Akaya Kanadaka', sans-serif;
-    font-size: 60px;
-    /*grubość czcionki*/
-    font-weight: 900; 
-    text-align: left;
-    text-align: center;
+  color: blue;
+  font-family: "Akaya Kanadaka", sans-serif;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: left;
+  text-align: center;
 }
-
 
 h2 {
-    color: #F15025;
-    font-family: 'Lucida Sans Unicode';
-    font-size: 40px; /*rozmiar czcionki*/
-    font-weight: 700; /*grubość czcionki*/
-    text-align: left;
+  color: #f15025;
+  font-family: "Lucida Sans Unicode";
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
 }
 
-
-h3{
-    color:#0c0842;
-    font-family: 'Lucida Sans Unicode';
-    font-size: 20px; /*rozmiar czcionki*/
-    font-weight: 700; /*grubość czcionki*/
-    text-align: left;
+h3 {
+  color: #0c0842;
+  font-family: "Lucida Sans Unicode";
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
 }
-
 
 p {
-    color: black ;
-    margin-bottom: 0;
-    text-indent: 1.5em;
-    
+  text-indent: 1.5em;
+  margin-top: 0;
 }
 
-
-
-p + p {
-    text-indent: 1.5em;
-    margin-top: 0
+footer {
+  color: gray;
 }
-
-
-
-footer{
-color: gray;
-}
-
-
 
 #top {
-    color: #1f0746;
-
+  color: #1f0746;
 }
 
-
-#linki {
-    color: white;
-    margin: 10px 10px;
-    
-   
+#links {
+  color: white;
+  margin: 10px 10px;
 }
-.link-box{
-    position: fixed;
-    display:inline-block;
-    box-sizing: border-box;       
-    background: black;
-    top: 2px;
-    width: 400px;
-    height: 25px;
-    padding: 2px;
-    z-index: 1000;    
-    border-width: 2px;
-    border-style: solid;
-    border-color: #cf8516; 
-    border-radius: 1px;
-    margin: 0px 2px; 
-
+.link-box {
+  position: fixed;
+  display: inline-block;
+  box-sizing: border-box;
+  background: black;
+  top: 2px;
+  width: 400px;
+  height: 25px;
+  padding: 2px;
+  z-index: 1000;
+  border: 2px solid #cf8516;
+  border-radius: 5px;
+  margin: 0px 2px;
 }
-
 
 #photo {
-    margin: 0 auto;
-    display: block;
-    width: 20%;    
+  margin: 0 auto;
+  display: block;
+  width: 20%;
 }
 
-.box1{
-    background: rgba(194, 239, 179, 1);    
-    width: 100%;
-    min-height: 100px;  
+.box1 {
+  background: rgba(194, 239, 179, 1);
+  width: 100%;
+  min-height: 270px;
 }
 
-
-.box2{
-    background: rgba(88, 164, 176, 0.6);     
-    display: inline-block; /*; ------jeżeli np: masz kilka pudełek to ustawia je od lewej do prawej do samego dołu */
-    overflow: auto; /*dokłada nam scroll w boxie*/
-    box-sizing: border-box; /*ustawiam wartości bordera, tak by nie musiec sumować pikseli */
-    height: 250px;
-    width: 250px;
-    padding: 20px ; /*np. wyświetla teksy z marginesem w pierwszym pudełku. Góra, prawo, dół, lewo, można też dać dwie wartości wtedy bedzie to góra-dół, prawo-lewo*/
-    border-width: 2px; /*ramka boxu*/
-    border-style: solid; /*obramowanie stałe*/
-    border-color: white; 
-    border-radius: 5px; /*promień narożników ramki, można zrobić pełne kółko dając 50%*/
-    margin: 10px 10px 10px 10px ; /* margin: 10px auto; ---odpycha wszystko co na zewnątrz o wartość*/    
-    margin-left: min(5px, 5%);
-                     
+.box2 {
+  background: rgba(88, 164, 176, 0.6);
+  height: 250px;
+  width: 250px;
+  margin: 10px auto 10px auto;
+  display: inline-block;
 }
 
-.box3{
-    background: rgba(88, 164, 176, 0.6);     
-    display: inline-block;
-    overflow: auto;    
-    padding: 20px ;
-    border-width: 2px; 
-    border-style: solid; 
-    border-color: white; 
-    border-radius: 5px; 
-    margin: 10px 10px ;             
+.box3 {
+  background: rgba(88, 164, 176, 0.6);
+  display: inline-block;
+  overflow: auto;
+  padding: 20px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 5px;
+  margin: 10px auto 10px auto;
 }
 
-.box4{
-    background: white;     
-    display: inline-block;
-    height: 12px;
-    width: 12px;
-    border-width: 2px; 
-    border-style: solid;     
-    margin: 2px 2px ;             
+.image {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
 }
 
-
+.image > img {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  display: inline-block;
+  margin-top: 0%;
+  width: 45%;
+  padding-top: 56.25;
+}
