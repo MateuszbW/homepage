@@ -1,5 +1,5 @@
 body {
-  background: #ced0ce;
+  background: #ffffff;
 }
 
 h1 {
@@ -26,6 +26,13 @@ h3 {
   font-weight: 700;
   text-align: left;
 }
+h4 {
+  color: #0c0842;
+  font-family: "Lucida Sans Unicode";
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+}
 
 p {
   text-indent: 1.5em;
@@ -40,7 +47,7 @@ footer {
   color: #1f0746;
 }
 
-#links {
+.links {
   color: white;
   margin: 10px 10px;
 }
@@ -64,33 +71,38 @@ footer {
   display: block;
   width: 20%;
 }
+.box-primary {
+  max-width: 1600px;
+  display: block;
+  margin: auto;
+}
 
 .box1 {
   background: rgba(194, 239, 179, 1);
   box-sizing: border-box;
+  display: inline-flex;
   width: 100%;
   min-height: 100px;
-  display: flex;
-  
+  min-width: 270px;
+  margin: 10 auto;
 }
 
 .box2 {
-  background: rgba(88, 164, 176, 0.6);
+  background: #E8F1F2;
   box-sizing: border-box;
+  display: inline-block;
   height: 250px;
   width: 250px;
-  margin: 10px auto 10px auto;
-  display: inline-block;
+  margin: 25px auto 25px auto;
   overflow: auto;
   border: 3px solid rgba(42, 126, 139, 0.6);
   border-radius: 5px;
-  padding: 20px ;
-
-  
+  padding: 20px;
+  box-shadow: 5px 5px 5px #777777;
 }
 
 .box3 {
-  background: rgba(88, 164, 176, 0.6);
+  background: #E8F1F2;
   display: inline-block;
   overflow: auto;
   padding: 20px;
@@ -98,7 +110,8 @@ footer {
   border-style: solid;
   border-color: rgba(42, 126, 139, 0.6);
   border-radius: 5px;
-  margin: 10px auto 10px auto;
+  margin: 25px auto 25px auto;
+  box-shadow: 5px 5px 5px #777777;
 }
 
 .image {
