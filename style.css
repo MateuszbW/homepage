@@ -26,13 +26,31 @@ h3 {
   font-weight: 700;
   text-align: left;
 }
-h4 {
+.js-text {
   color: #0c0842;
   font-family: "Lucida Sans Unicode";
   font-size: 20px;
   font-weight: 550;
   text-align: center;
 }
+.js-text__description{
+  color: #0c0842;
+  font-family: "Lucida Sans Unicode";
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+
+}
+
+.js-text__content{
+  color: #0c0842;
+  font-family: "Lucida Sans Unicode";
+  font-size: 20px;
+  font-weight: 550;
+  text-align: center;
+
+}
+
 
 p {
   text-indent: 1.5em;
@@ -50,6 +68,9 @@ footer {
 .links {
   color: white;
   margin: 10px 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  
 }
 .link-box {
   position: fixed;
@@ -57,8 +78,8 @@ footer {
   box-sizing: border-box;
   background: black;
   top: 2px;
-  width: 400px;
-  height: 25px;
+  min-width: 400px;
+  min-height: 25px;
   padding: 2px;
   z-index: 1000;
   border: 2px solid #cf8516;
@@ -80,9 +101,9 @@ footer {
 .box1 {
   background: rgba(194, 239, 179, 1);
   box-sizing: border-box;
-  display: inline-flex;
-  width: 100%;
-  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+   min-height: 100px;
   min-width: 270px;
   margin: 10 auto;
 }
