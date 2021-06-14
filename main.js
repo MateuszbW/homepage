@@ -13,9 +13,8 @@ console.log(
 
 function calculate(myNumber) {
   console.log(`Dostałem ${myNumber}`);
-  return (
-    myNumber * 7
-  ); /* bez tego funkcja wykonuje obliczenia ale nie zwraca wyniku. I w tym przypadku operacja poniżej nie pomnoży go x2  */
+  return myNumber * 7;
+  /* bez tego "return" funkcja wykonuje obliczenia ale nie zwraca wyniku. I w tym przypadku operacja poniżej nie pomnoży go x2  */
   /* return `wynik ${myNumber}`        --- takia funkcjia wyświetliła by napis"wynik 224" ponieważ pomnożyłaby stałą age 32*7 */
 }
 
@@ -49,5 +48,3 @@ function createContent(querySelectorContent, content) {
 createContent(".js-text__description--js", "Tutaj używam funkcji JS");
 
 createContent(".js-text__content--js", "A tutaj podmieniam tekst");
-
-
