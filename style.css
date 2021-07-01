@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
   background: #ffffff;
 }
@@ -62,19 +70,10 @@ footer {
   color: #1f0746;
 }
 
-.links {
-  color: white;
-  margin: 10px 10px;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-}
 .link-box {
   position: fixed;
-  display: inline-block;
-  box-sizing: border-box;
   background: black;
   top: 2px;
-  min-width: 350px;
   min-height: 25px;
   padding: 2px;
   z-index: 1000;
@@ -82,6 +81,16 @@ footer {
   border-radius: 5px;
   margin: 0px 2px;
 }
+.links {
+  color: white;
+  margin: 10px 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
 .photo-box {
   display: flex;
   flex-wrap: wrap;
@@ -135,18 +144,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   min-height: 100px;
-  min-width: 360px;
   margin: 10 auto;
 }
-.box1-1 {
-  background: rgba(194, 239, 179, 1);
-  box-sizing: border-box;
-  flex-wrap: wrap;
-  min-height: 100px;
-  min-width: 360px;
-  margin: 10 auto;
-}
-
 
 .box2 {
   background: #e8f1f2;
@@ -175,7 +174,6 @@ footer {
   box-shadow: 5px 5px 5px #777777;
 }
 
-
 .box-inside {
   background: #e8f1f2;
   box-sizing: border-box;
@@ -199,12 +197,12 @@ footer {
   padding: 1px;
   align-content: center;
   flex-flow: row wrap;
-  }
+}
 .box-column-right {
   background: #e8f1f2;
   box-sizing: border-box;
   display: flex;
- align-items: stretch;
+  align-items: stretch;
   width: 175px;
   margin: 1px;
   overflow: auto;
@@ -212,31 +210,41 @@ footer {
   text-align: center;
   word-wrap: break-word;
   border-left: 3px dashed rgba(42, 126, 139, 0.6);
-  }
+}
+.box1-1 {
+  background: rgba(194, 239, 179, 1);
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  min-height: 100px;
+  min-width: 360px;
+  margin: 10 auto;
+}
 
-.list-item{
+.list-item {
   text-align: left;
 }
-.list-none{
+.list-none {
   list-style: none;
 }
-.list-style-none{
+.list-style-none {
   list-style: none;
 }
-.list-item-square{
+.list-item-square {
   list-style: square;
 }
-.list-item-roman{
+.list-item-roman {
   list-style: upper-roman;
 }
-.list-item-inne{
+.list-item-inne {
   list-style: circle;
 }
 
-.table, td, th{
+.table,
+td,
+th {
   border: 1px dotted black;
 }
-table{
+table {
   width: 100%;
   border-collapse: collapse;
 }
@@ -249,7 +257,7 @@ table{
   min-height: 100px;
   min-width: 360px;
   margin: 10 auto;
-  border: 1px solid black
+  border: 1px solid black;
 }
 .box-example {
   background: #e8f1f2;
@@ -258,7 +266,6 @@ table{
   width: 350px;
   border: 3px solid rgba(42, 126, 139, 0.6);
   box-shadow: 5px 5px 5px #777777;
-  
 }
 .box-display {
   background: rgba(194, 239, 179, 1);
@@ -268,33 +275,33 @@ table{
   min-height: 100px;
   min-width: 360px;
   margin: 10 auto;
-  border: 1px solid black
+  border: 1px solid black;
 }
 .flex-direction {
-  background: rgba(194, 239, 179, 1);  
-  flex-direction: column;  
+  background: rgba(194, 239, 179, 1);
+  flex-direction: column;
   display: flex;
   min-height: 100px;
   min-width: 360px;
   margin: 10 auto;
-  border: 1px solid black
+  border: 1px solid black;
 }
 
 .flex-wrap {
-  background: rgba(194, 239, 179, 1);  
-  flex-wrap: wrap;  
+  background: rgba(194, 239, 179, 1);
+  flex-wrap: wrap;
   display: flex;
   min-height: 100px;
   min-width: 360px;
   margin: 10 auto;
-  border: 1px solid black
+  border: 1px solid black;
 }
 .justify-content {
-  background: rgba(194, 239, 179, 1);  
-  flex-wrap: wrap;  
+  background: rgba(194, 239, 179, 1);
+  flex-wrap: wrap;
   display: flex;
   min-height: 100px;
   min-width: 360px;
   margin: 10 auto;
-  border: 1px solid black
+  border: 1px solid black;
 }
