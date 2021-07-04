@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przypominajka WTF</title>
+    <link href="normalize.css" rel="stylesheet" type="text/css">
     <link href="style.css" rel="stylesheet" type="text/css">
     <!--czcionka nagłówka-->
     <link href='http://fonts.googleapis.com/css?family=Akaya+Kanadaka&subset=latin,latin-ext' rel='stylesheet'
@@ -23,111 +24,212 @@
             </nav>
         </header>
         
-    <main>
+        <main>
 
 
-        <header>
-            <h1 id="top">Przypominajka WTF</h1>
-        </header>
+            <header>
+                <h1 id="top">Przypominajka WTF</h1>
+            </header>
 
 
-        <section>
-            <h2>Ważność (klasyfikacja) stylowania</h2>
+            <section>
+                <h2>Ważność (klasyfikacja) stylowania</h2>
 
-            <p>
-                <strong> Klasywikacje stylowania można porównywać do klasyfikacji medalowej reprezentacji: </strong>
-            </p>
-            <p>Złoto- !important </p>
-            <p>Srebro- style=""</p>
-            <p>Brąz- #name (selektor klasy)</p>
-            <p>4 miejsce- .name (selektor id)</p>
-            <p>5 miejsce- element (np <i>h1{} </i> lub <i>body h1{}</i></p>
-            
-        </section>
-
-        <section>
-            <h3> Przykłady:</h3>
-            <figure class="photo-box">
-                <figure class="photo">
-                    <img src="win1.JPG" alt="win1" /><br>
-                </figure>
-                <figure class="photo">
-                    <img src="win2.JPG" alt="win2" /><br>
-                </figure>
-                <figure class="photo">
-                    <img src="win3.JPG" alt="win3" /><br>
-                </figure>
-            </figure>
-        </section>
-
-        <section>
-            <h2>Listy-style</h2>
-            <div class="box1">
-                <div class="box-inside">
-                    <div class="box-column-left">
-                        <a class="text-position-left">
-                            <ul class="list-none">
-                                <li class="list-item"> list-style:</li>
-                            </ul>
-                        </a>
-                    </div>
-                    <div class="box-column-right">
-                        <a class="text-position-left">
-                            <ul class="list-none">
-                                <li class="list-item-none"> none</li>
-                                <li class="list-item-square">square</li>
-                                <li class="list-item-roman">upper-roman</li>
-                                <li class="list-item-inne">I wiele innych (wyszukaj w necie)</li>
-                            </ul>                            
-                        </a>
-                    </div>                    
-                </div>                                          
-            </div>
-        </section>
-        <section>  
-                <section>
-                    <h2>FLEXBOX</h2> 
-                    <a>Jest to system pozycjonowania elementów w osi X i Y </a>           
-                </section>
-            <div class="box1-2">
-                <div class="box-inside">
-                    <div class="box-column-left">
-                        <a class="text-position-left">
-                            <ul class="list-none">
-                                <li class="list-item"> display:</li>
-                            </ul>
-                        </a>
-                    </div>
-                    <div class="box-column-right">
-                        <a class="text-position-left">
-                            <ul class="list-none">
-                                <li class="list-item-none"> flex</li>                            
-                            </ul>                            
-                        </a>  
-                    </div>                      
-                </div>                    
-            </div>     
-        </section>   
-        <section>  
-            <section>                
-                <a>Pozycjonujemy nasze pudełka wewnątrz od której do której strony mają się układać </a>           
+                <p>
+                    <strong> Klasywikacje stylowania można porównywać do klasyfikacji medalowej reprezentacji: </strong>
+                </p>
+                <p>Złoto- !important </p>
+                <p>Srebro- style=""</p>
+                <p>Brąz- #name (selektor klasy)</p>
+                <p>4 miejsce- .name (selektor id)</p>
+                <p>5 miejsce- element (np <i>h1{} </i> lub <i>body h1{}</i></p>
+                
             </section>
-                <div class="flex-direction">
+
+            <section>
+                <h3> Przykłady:</h3>
+                <figure class="photo-box">
+                    <figure class="photo">
+                        <img src="win1.JPG" alt="win1" /><br>
+                    </figure>
+                    <figure class="photo">
+                        <img src="win2.JPG" alt="win2" /><br>
+                    </figure>
+                    <figure class="photo">
+                        <img src="win3.JPG" alt="win3" /><br>
+                    </figure>
+                </figure>
+            </section>
+
+            <section>
+                <h2>Listy-style</h2>
+                <div class="box1">
                     <div class="box-inside">
                         <div class="box-column-left">
                             <a class="text-position-left">
                                 <ul class="list-none">
-                                    <li class="list-item"> flex-direction:</li>
+                                    <li class="list-item"> list-style:</li>
                                 </ul>
                             </a>
                         </div>
                         <div class="box-column-right">
                             <a class="text-position-left">
                                 <ul class="list-none">
-                                    <li class="list-item-none"> row (domyślny)</li>
-                                    <li class="list-item-none"> <b>column</b></li> 
-                                    <li class="list-item-none"> row-reverse</li> 
-                                    <li class="list-item-none"> column-reverse</li>                             
+                                    <li class="list-item-none"> none</li>
+                                    <li class="list-item-square">square</li>
+                                    <li class="list-item-roman">upper-roman</li>
+                                    <li class="list-item-inne">I wiele innych (wyszukaj w necie)</li>
+                                </ul>                            
+                            </a>
+                        </div>                    
+                    </div>                                          
+                </div>
+            </section>
+
+            <section>  
+                <section>
+                    <h2>FLEXBOX</h2> 
+                    <a>Jest to system pozycjonowania elementów w osi X i Y </a>           
+                </section>
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item"> display:</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item-none"> flex</li>                            
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>                    
+                </div>     
+            </section> 
+
+            <section>  
+                <section>                
+                    <a>Pozycjonujemy nasze pudełka wewnątrz od której do której strony mają się układać </a>           
+                </section>
+                    <div class="flex-direction">
+                        <div class="box-inside">
+                            <div class="box-column-left">
+                                <a class="text-position-left">
+                                    <ul class="list-none">
+                                        <li class="list-item"> flex-direction:</li>
+                                    </ul>
+                                </a>
+                            </div>
+                            <div class="box-column-right">
+                                <a class="text-position-left">
+                                    <ul class="list-none">
+                                        <li class="list-item-none"> row (domyślny)</li>
+                                        <li class="list-item-none"> <b>column</b></li> 
+                                        <li class="list-item-none"> row-reverse</li> 
+                                        <li class="list-item-none"> column-reverse</li>                             
+                                    </ul>                            
+                                </a>  
+                            </div>                      
+                        </div>                   
+                        <div class="box-inside">
+                            <div class="box-column-left">
+                                <a class="text-position-left">
+                                    <ul class="list-none">
+                                        <li class="list-item"> flex-direction:</li>
+                                    </ul>
+                                </a>
+                            </div>                    
+                            <div class="box-column-right">
+                                <a class="text-position-left">
+                                    <ul class="list-none">
+                                        <li class="list-item-none"> <b>column</b></li>                                                       
+                                    </ul>                            
+                                </a>  
+                            </div>                      
+                        </div>  
+                    </div>                    
+            </section> 
+
+            <section>  
+                <section>                
+                    <a>Zawija nam boxy wewnątrz tak by mieściły się na ekranie od lewej do prawej, w górę i w dół </a>           
+                </section>
+                <div class="flex-wrap">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item"> flex-wrap:</li>
+                                </ul>
+                                </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item-none"> wrap</li>                                                        
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div> 
+                        <div class="box-example"></div> 
+                        <div class="box-example"></div>
+                        <div class="box-example"></div>
+                        <div class="box-example"></div>
+                        <div class="box-example"></div>                                   
+                </div>     
+            </section> 
+
+            <section>  
+                <section>            
+                    <a>Skrótowy zapis Flex-direction oraz flex-wrap </a>           
+                </section>
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item"> flex-flow:</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item-none"> row-wrap</li>                            
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>   
+                </div>                
+            </section> 
+            <section> 
+                <section>
+                    <h2>JUSTIFY-CONTENT</h2>
+                    <a>Służy do wyrównywania elementów kontenera
+                        elastycznego (flexbox), właściwość jest wykorzystywana w sytuacji 
+                        gdy elementy nie wykorzystują całej dostępnej przestrzeni.</a>
+                </section>   
+                <div class="justify-content">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item"> justify-content:</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item-none"> start/ end/ flex-start/ flex-end</li>
+                                    <li class="list-item-none"> <b>space-between</b></li> 
+                                    <li class="list-item-none"> center/ left/ right</li> 
+                                    <li class="list-item-none"> space-around/ space-evenly</li>
+                                    <li class="list-item-none"> stretch </li>                              
                                 </ul>                            
                             </a>  
                         </div>                      
@@ -136,86 +238,34 @@
                         <div class="box-column-left">
                             <a class="text-position-left">
                                 <ul class="list-none">
-                                    <li class="list-item"> flex-direction:</li>
+                                    <li class="list-item"> justify-content:</li>
                                 </ul>
                             </a>
-                    </div>
-                    <div class="box-column-right">
-                        <a class="text-position-left">
-                            <ul class="list-none">
-                                <li class="list-item-none"> <b>column</b></li>                                                       
-                            </ul>                            
-                        </a>  
-                    </div>                      
-                </div>                  
-            </section> 
-        <section>  
-            <section>                
-                <a>Zawija nam boxy wewnątrz tak by mieściły się na ekranie od lewej do prawej, w górę i w dół </a>           
-            </section>
-        <div class="flex-wrap">
-            <div class="box-inside">
-                <div class="box-column-left">
-                    <a class="text-position-left">
-                        <ul class="list-none">
-                            <li class="list-item"> flex-wrap:</li>
-                        </ul>
-                    </a>
-                </div>
-                <div class="box-column-right">
-                    <a class="text-position-left">
-                        <ul class="list-none">
-                            <li class="list-item-none"> wrap</li>                                                        
-                        </ul>                            
-                    </a>  
-                </div>                      
-            </div> 
-            <div class="box-example"></div> 
-            <div class="box-example"></div>
-            <div class="box-example"></div>
-            <div class="box-example"></div>
-            <div class="box-example"></div>
-                                   
-        </div>     
-    </section> 
-    <section>  
-        <section>            
-            <a>Skrótowy zapis Flex-direction oraz flex-wrap </a>           
-        </section>
-    <div class="box1-2">
-        <div class="box-inside">
-            <div class="box-column-left">
-                <a class="text-position-left">
-                    <ul class="list-none">
-                        <li class="list-item"> flex-flow:</li>
-                    </ul>
-                </a>
-            </div>
-            <div class="box-column-right">
-                <a class="text-position-left">
-                    <ul class="list-none">
-                        <li class="list-item-none"> row-wrap</li>                            
-                    </ul>                            
-                </a>  
-            </div>                      
-        </div>                    
-    
-    
-    
-    
-    
-    </div>     
-</section>                                      
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li class="list-item-none"> <b>space-between</b></li>                                                       
+                                </ul>                            
+                            </a>  
+                        </div>   
+                    </div>                   
+                </div>     
+            </section>     
+                                
         
-        
+                                        
+            
+            
 
 
-    </main>
+        </main>
 
 
-    <footer>
-        Jest to stopka strony, kiedyś coś tu napiszę. <a href="#top"> Wróć na górę strony</a>
-    </footer>
+        <footer>
+            Jest to stopka strony, kiedyś coś tu napiszę. <a href="#top"> Wróć na górę strony</a>
+        </footer>
+    </div>
 
 </body>
 

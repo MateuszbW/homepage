@@ -7,7 +7,9 @@ html {
   box-sizing: inherit;
 }
 body {
-  background: #ffffff;
+background-color: #93b5b5;
+background-image: linear-gradient(0deg, #93b5b5 0%, #e9f5f5 100%);
+;
 }
 
 h1 {
@@ -191,10 +193,10 @@ footer {
   display: flex;
   align-items: stretch;
   max-width: 400px;
-  width: 175px;
-  margin: 1px;
-  overflow: auto;
-  padding: 1px;
+  text-align: center;
+  margin: 10px;
+  
+  padding: 10px;
   align-content: center;
   flex-flow: row wrap;
 }
@@ -203,12 +205,11 @@ footer {
   box-sizing: border-box;
   display: flex;
   align-items: stretch;
-  width: 175px;
-  margin: 1px;
-  overflow: auto;
-  padding: 1px;
+  margin: 10px;
   text-align: center;
-  word-wrap: break-word;
+  padding: 10px;
+  flex-flow: row wrap;
+  
   border-left: 3px dashed rgba(42, 126, 139, 0.6);
 }
 .box1-1 {
@@ -218,7 +219,9 @@ footer {
   min-height: 100px;
   min-width: 360px;
   margin: 10 auto;
+  padding: 20px;
 }
+
 
 .list-item {
   text-align: left;
@@ -298,7 +301,10 @@ table {
 }
 .justify-content {
   background: rgba(194, 239, 179, 1);
+  box-sizing: border-box;
   flex-wrap: wrap;
+  justify-content: center;
+  
   display: flex;
   min-height: 100px;
   min-width: 360px;
