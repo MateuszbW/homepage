@@ -32,9 +32,20 @@ h2 {
 h3 {
   color: #0c0842;
   font-family: "Lucida Sans Unicode";
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
   text-align: left;
+}
+h4 {
+  color: #0c0842;
+  font-family: "Lucida Sans Unicode";
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 600;;
 }
 .js-text {
   color: #0c0842;
@@ -58,10 +69,13 @@ h3 {
   font-weight: 550;
   text-align: center;
 }
-
+a {
+font-size: 20px;;
+}
 p {
   text-indent: 1.5em;
   margin-top: 0;
+  font-size: 20px;
 }
 
 footer {
@@ -178,6 +192,7 @@ footer {
   align-content: center;
 }
 
+
 .box-column-left {
   background: #e8f1f2;
   box-sizing: border-box;
@@ -196,7 +211,7 @@ footer {
   display: flex;
   margin: 10px;
   padding: 10px;
-  border-left: 3px dashed #777777;);
+  border-left: 3px dashed #777777;
   }
 .text-position-left {
   font-size: 18px;
@@ -215,6 +230,15 @@ footer {
   padding: 20px;
   box-shadow: 5px 5px 5px #777777;
 }
+.text-left{
+  font-size: 18px;
+  text-align: left;  
+  display: flex;
+  
+
+}
+
+  
 
 
 .list-item {
@@ -249,6 +273,7 @@ table {
 .box1-2 {
   
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
    
 }

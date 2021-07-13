@@ -20,7 +20,8 @@
             <nav class="link-box">
                 <a class="links" href="index.html"> Strona główna</a>
                 <a class="links" href="przydatne-linki.html"> Przydatne linki</a>
-                <a class="links" href="pomoc-css.html">Stylowanie CSS</a>            
+                <a class="links" href="pomoc-css.html">Stylowanie CSS</a> 
+                <a class="links" href="JavaScript.html">JavaScript</a>           
             </nav>
         </header>
         
@@ -169,8 +170,10 @@
                         </div>
                         <div class="box-column-right">
                             <a class="text-position-left">
-                                <ul class="list-none">
-                                    <li> <b>wrap</b></li>                                                        
+                                <ul>
+                                    <li> <b><u>wrap:</u></b>elementy wystające przechodzą do kolejnych linii.</li> 
+                                    <li> <b>nowrap:</b> każdy element dopasowuje się do pojedynczego wiersza.</li> 
+                                    <li> <b>wrap-reverse:</b> elementy wystające do kolejnych linii w odwrotnej kolejności.</li>                                                        
                                 </ul>                            
                             </a>  
                         </div>                      
@@ -185,7 +188,9 @@
 
             <section>  
                 <section>            
-                    <a>Skrótowy zapis Flex-direction oraz flex-wrap </a>           
+                    <a>Skrótowy zapis Flex-direction oraz flex-wrap </a>
+                    <a>Jednoczesne zastosowanie własności flex-direction i flex-wrap występuje bardzo często, dlatego też utworzono własność skrótową flex-flow. Przyjmuje ona dwie wartości rozdzielone spacją.
+                        Na przykład: wpisując flex-flow: row wrap uzyskamy efekt ułożenia elementów w wierszu i zawijanie ich do kolejnych linii w przypadku gdy któryś wystawałby poza kontener.</a>           
                 </section>
                 <div class="box1-2">
                     <div class="box-inside">
@@ -198,8 +203,10 @@
                         </div>
                         <div class="box-column-right">
                             <a class="text-position-left">
-                                <ul class="list-none">
-                                    <li> <b>row-wrap</b></li>                            
+                                <ul>
+                                    <li> <b>row wrap</b></li> 
+                                    <li> <b>column wrap</b></li> 
+                                    <li> <b>itp</b></li>                            
                                 </ul>                            
                             </a>  
                         </div>                      
@@ -207,11 +214,9 @@
                 </div>                
             </section> 
             <section> 
-                <section>
-                    <h2>JUSTIFY-CONTENT</h2>
+                <section>                    
                     <a>Służy do wyrównywania elementów kontenera
-                        elastycznego (flexbox), właściwość jest wykorzystywana w sytuacji 
-                        gdy elementy nie wykorzystują całej dostępnej przestrzeni.</a>
+                        elastycznego (flexbox), ta właściwość języka CSS wyrównuje elementy w poziomie</a>
                 </section>   
                 <div class="box1-2">
                     <div class="box-inside">
@@ -237,6 +242,144 @@
                     
                 </div>     
             </section>  
+            <section> 
+                <section>                    
+                    <a>Ta właściwość CSS wyrównuje elementy w pionie</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>align-items:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>flex-start:</b> elementy wyrównują się do górnej krawędzi kontenera.</li>
+                                    <li> <b>flex-end:</b> elementy wyrównują się do dolnej strony kontenera.</li> 
+                                    <li> <b>center:</b> elementy zostaną wyśrodkowane w pionie.</li> 
+                                    <li> <b>space-between:</b> Elementy zostaną wyświetlone na linii odniesienia kontenera.</li>
+                                    <li> <b>space-around:</b> Elementy zostaną powiększone tak, aby wypełnić kontener. </li>                              
+                                </ul>                            
+                            </a>  
+                        </div>                                             
+                    </div>                                                         
+                </div>                    
+            </section> 
+            <section> 
+                <section>                    
+                    <a>Ta właściwość określa ona kierunek w jakim elementy są rozmieszczone w kontenerze</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>flex-direction:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>row:</b> Elementy zostaną rozmieszczone tak jak tekst.</li>
+                                    <li> <b>row-reverse:</b> Elementy zostaną rozmieszczone odwrotnie do kierunku tekstu.</li> 
+                                    <li> <b>column:</b> Elementy zostaną rozmieszczone od góry do dołu.</li> 
+                                    <li> <b>column-reverse:</b> Elementy zostaną rozmieszczone od dołu do góry.</li>                                                                  
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>                   
+                    
+                </div>     
+            </section>
+            <section> 
+                <section>                    
+                    <a>Czasami odwracanie wierszy i kolumn kontenera nie wystarcza. W takich przypadkach, 
+                        możemy zastosować własność order do pojedynczego elementu. Domyślnie elementy mają wartość 0, 
+                        ale przy pomocy tej własności możemy ustalić kolejność na dowolną dodatnią lub ujemną wartość.</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>order:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>1:</b> zamienia element B z elementem C po prawej stronie</li>
+                                    <li> <b>-1:</b> zamienia element B z elementem A po lewej stronie</li> 
+                                                                        
+                                </ul>                            
+                            </a>  
+                        </div>                      
+                    </div>                                       
+                </div>                 
+            </section>
+            <section> 
+                <section>                    
+                    <a>Następną własnością stosowaną wobec każdego elementu z osobna jest align-self. Przyjmuje ona wartości takie same jak align-items, ale ma zastosowanie tylko wobec konkretnego elementu.</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>align-self:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>flex-start:</b> elementy wyrównują się do górnej krawędzi kontenera.</li>
+                                    <li> <b>flex-end:</b> elementy wyrównują się do dolnej strony kontenera.</li> 
+                                    <li> <b>center:</b> elementy zostaną wyśrodkowane w pionie.</li> 
+                                    <li> <b>space-between:</b> Elementy zostaną wyświetlone na linii odniesienia kontenera.</li>
+                                    <li> <b>space-around:</b> Elementy zostaną powiększone tak, aby wypełnić kontener. </li>                              
+                                </ul>                            
+                            </a>  
+                        </div>                                             
+                    </div>                                                         
+                </div>                    
+            </section>
+            <section> 
+                <section>                    
+                    <a>Własność align-content pomoże ci ustalić odległość wierszy kontenera od siebie. Własność ta przyjmuje takie wartości:</a>
+                </section>   
+                <div class="box1-2">
+                    <div class="box-inside">
+                        <div class="box-column-left">
+                            <a class="text-position-left">
+                                <ul class="list-none">
+                                    <li> <b>align-content:</b></li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="box-column-right">
+                            <a class="text-position-left">
+                                <ul>
+                                    <li> <b>flex-start:</b> Wiersze upychają u góry kontenera.</li>
+                                    <li> <b>flex-end:</b> Wiersze upychają się w dolnej części kontenera.</li> 
+                                    <li> <b>center:</b> Wiersze upychane są pośrodku kontenera.</li> 
+                                    <li> <b>space-between:</b> Wiersze wyświetlane są z równymi odstępami.</li>
+                                    <li> <b>space-around:</b> Wiersze wyświetlane są z równymi odstępami dookoła. </li> 
+                                    <li> <b>stretch:</b> Wiersze rozszerzają się tak, aby dopasować się do kontenera. </li>                             
+                                </ul>                            
+                            </a>  
+                        </div>                                             
+                    </div>                                                         
+                </div>                    
+            </section>      
+            
+            
                
                                 
         

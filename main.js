@@ -48,3 +48,131 @@ function createContent(querySelectorContent, content) {
 createContent(".js-text__description--js", "Tutaj używam funkcji JS");
 
 createContent(".js-text__content--js", "A tutaj podmieniam tekst");
+
+
+
+
+
+/*                                              wyrażenia logiczne                                             */
+if ('Java' != 'Javascript'){
+  console.log('Java to nie JavaScript');
+}
+
+if (2 < 3){
+  console.log('2 < 3');
+}
+
+if (5 > 20){
+  console.log('2 > 3');
+}
+
+if (2 >= 2){
+  console.log('2 >= 2');
+}
+
+
+if (40 == `40`){  /* tutaj można oszukać JS że wartość 40 jest równa napisowi 40 */
+  console.log(`40 == 40`);
+}
+
+if (3 === `3`){  /* tutaj już nie oszukamy JS */
+  console.log('3 === `3`');
+}
+
+if (99 !== `99`){  /* tutaj sprawdziło nam typy zmiennych i dzięki temu nam wyświetliło */
+  console.log('99 !== `99`');
+}
+
+console.log(typeof 77);
+console.log(typeof '77');
+if (77 !== `77`){  /* tutaj sprawdziło nam typy zmiennych zadeklarowanych powyżej i dzięki temu nam wyświetliło, bez zadeklarowania ich nie wyświetliłoby napisu */
+  console.log('77 !== `77`');
+}
+
+const humanOne = {
+  name: 'Ignacy',
+  age: 35,
+  adress: {
+    street: 'Warszawska',
+    city: 'Białystok',
+  },
+};
+
+const humanTwo = {
+  name: 'Stefan',
+  age: 35,
+  adress: humanOne.adress,
+};
+
+
+
+console.log(humanOne);
+console.log(humanTwo);
+
+
+if (humanOne.age > humanTwo.age) {
+  console.log('Human one jest starszy');
+}
+
+if (humanOne.age === humanTwo.age) {
+  console.log('Są równolatkami');
+}
+
+if (humanOne.age < humanTwo.age) {
+  console.log('Human two jest starszy');
+}
+
+
+
+/*                                              wyrażenia logiczne- truthy falsy                                             */
+if(''){
+  console.log('to się nie wykona')
+}
+
+if(4){
+  console.log('to się wykona')
+}
+
+/*                                              wyrażenia logiczne- kilka warunków                                             */
+
+if((humanTwo.age === 35)&& humanTwo.adress){
+  console.log('to sie wykona')
+}
+
+/*                                              wyrażenia logiczne- ELSE                                             */
+
+if (humanOne.age > humanTwo.age) {
+  console.log('Human one jest starszy');
+}
+
+else  {
+  console.log('między nimi jest różnica wieku ');
+}
+
+/*                                              wyrażenia logiczne- ELSE IF                                             */
+
+if (humanOne.age > humanTwo.age) {
+  console.log('Human one jest starszy');
+}
+
+else if (humanOne.age === humanTwo.age) {
+  console.log('są równolatkami ');
+}
+else {
+  console.log('human two jest starszy')
+}
+
+/*                                              wyrażenia logiczne- SWITH                                             */
+
+const myNumber = {example: 'podałem obiekt zamiast cyfry 7'};
+
+switch (myNumber) {
+  case 7:
+    console.log('jestem siódemką');
+  break;
+  case 9:
+    console.log('jestem dziewiątką');
+  break;
+  default:
+    console.log('jestem czymś innym');
+}
