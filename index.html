@@ -221,6 +221,163 @@
             </div>            
         </section>
 
+        <fieldset>
+            <h2>Formularze</h2>
+            <form class="form">
+                <p>
+                    <label for="name">
+                        Your Name:                    
+                        <input 
+                            class="form__item" 
+                            id="name" 
+                            placeholder="Enter Your name" 
+                            name="name"
+                        />
+                    </label>
+                </p>
+                <p>
+                    <label for="surName">
+                        Your surname:                    
+                        <input 
+                            class="form__item" 
+                            id="surname" 
+                            placeholder="Enter Your surname" 
+                            name="surname"
+                        />
+                    </label>
+                </p>
+                <fieldset>
+                    <legend>Adress</legend>
+                    <p>
+                        <label for="streetName">
+                            Street name:                    
+                            <input 
+                                class="form__item" 
+                                id="streetName" 
+                                placeholder="Enter Your Street name" 
+                                name="streetName"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="streetName">
+                            City:                    
+                            <input 
+                                class="form__item" 
+                                id="city" 
+                                placeholder="Enter Your City name" 
+                                name="city"
+                            />
+                        </label>
+                    </p>
+                </fieldset>
+                
+                                
+            </form>
+             
+
+            <section>  
+                <h4>typy</h4>
+                    <p><b>type="text"</b> służy do zadeklarowania czy będzie to text, password itp </p>
+                <h4>wartość</h4>
+                    <p><b>value="Maciek"</b> uzupełni nam pole o wartość  </p> 
+                <h4>tekst podpowiedzi</h4> 
+                    <p><b>placeholder="Enter Your surname" </b> gdy pole jest puste podpowiada nam co mamy w niego wpisać </p>   
+            </section>
+            
+                <h4>
+                    Zastosujemy formularz radio 
+                </h4>
+            <fieldset>
+                    <legend>Favourite icecream flavour</legend>
+                    <p>
+                        <label><input name="iceCream" type="radio" value="Chocolate"> Chocolate</label>
+                    </p>
+                    <p>
+                        <label><input name="iceCream" type="radio" value="vanilia"> vanilia</label>
+                    </p>
+                    <p>
+                        <label><input name="iceCream" type="radio" value="lemon"> Lemon</label>
+                    </p>
+            </fieldset>
+            
+            <fildset>
+                <h4>
+                    Zastosujemy formularz checkbox 
+                </h4>
+                <p>
+                    <label><input name="agreement" type="checkbox"> I agree</label>
+                </p>
+            </fildset>
+        </fieldset> 
+        
+        <fieldset>
+            <form class="form">
+                <fieldset>
+                    <legend>Contakt</legend>
+                    <p>
+                        <label for="email">
+                            Email:                    
+                            <input 
+                                class="form__item" 
+                                id="email" 
+                                placeholder="Enter Your email" 
+                                name="email"
+                                type="email"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="range">
+                            Range:                    
+                            <input 
+                                class="from__item range--js" 
+                                id="range" 
+                                name="range"
+                                type="range"
+                                min="0"
+                                max="100"
+                                step="10"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="password">
+                            password:                    
+                            <input 
+                                class="form__item" 
+                                id="password" 
+                                placeholder="Enter Your password" 
+                                name="password"
+                                type="password"
+                            />
+                        </label>
+                    </p>
+                    <p>
+                        <label for="file">
+                            password:                    
+                            <input 
+                                class="form__item" 
+                                id="file" 
+                                placeholder="Choice file" 
+                                name="file"
+                                type="file"
+                            />
+                        </label>
+                    </p>
+                    
+                </fieldset>
+                
+                                
+            </form>
+             
+
+           
+        </fieldset>
+   
+        
+        
+
 
 
 

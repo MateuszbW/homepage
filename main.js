@@ -176,3 +176,8 @@ switch (myNumber) {
   default:
     console.log('jestem czymś innym');
 }
+/*                                              wywołanie wartości z suwaka  Range do konsoli                    */
+/* const myRange = document.querySelector('.range--js');
+myRange.value */
+
+
