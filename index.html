@@ -16,18 +16,24 @@
 
 <body>
 <div class="box-primary">
-    <header>
-        <nav class="link-box">
-            <a class="links" href="index.html"> Strona główna</a>
-            <a class="links" href="przydatne-linki.html"> Przydatne linki</a>
-            <a class="links" href="pomoc-css.html">Stylowanie CSS</a>
-            <a class="links" href="JavaScript.html">JavaScript</a>            
+
+    
+    <header class="header">
+        <button class="hamburger hamburger--js" aria-label="Open menu">MENU</button>
+        <nav class="navigation navigation--js">            
+            <a class="navigation__link" href="index.html"> Strona główna</a>
+            <a class="navigation__link" href="przydatne-linki.html"> Przydatne linki</a>
+            <a class="navigation__link" href="pomoc-css.html">Stylowanie CSS</a>
+            <a class="navigation__link" href="JavaScript.html">JavaScript</a>            
         </nav>
+        
     </header>
 
 
-    <main>      
-        <header>
+    <main class="main">  
+        
+        
+        <header class="main__header">
             <h1 id="top top--js">Przypominajka WTF</h1>
             <p class="js-text"></p>  <!--tutaj piszemy tekst z  pomocą JS-->
             <p class="js-text__description js-text__description--js"></p>
@@ -69,7 +75,7 @@
                 </div>
             </div>
             <div class="image">
-            <img  src="rozumiesz.png" alt="mr-bean" />
+                <img  src="rozumiesz.png" alt="mr-bean" />
             </div>
         </section>
 
