@@ -7,21 +7,14 @@ body{
     display: grid;
 }
 .main{
-    display: grid;
-    grid-template-areas: "header header header" 
-    "article . aside"
-    "footer footer footer"
-    ; /*ustawiamy w ile kolumn ma być w wiwrszu*/
-    grid-template-columns: 1fr 64px 200px;
-    column-gap: 16px;
-    row-gap: 16px;
+    
     
 }
 
 .header{
     background: tomato;    
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .article{
     background: tomato;
@@ -30,8 +23,31 @@ body{
 .aside{
     background: tomato;
     grid-area: aside;
+    
 }
+
 .footer{
     background: tomato;
     grid-area: footer;
+}
+@media screen and (min-width: 600px) {
+    body{
+        background: #92ce92;
+        color: #333;
+    }
+    .main{
+        display: grid;
+        grid-template-areas: "header header header" 
+        "article . aside"
+        "footer footer footer"
+        ; /*ustawiamy w ile kolumn ma być w wiwrszu*/
+        grid-template-columns: 1fr 64px 200px;
+        column-gap: 16px;
+        row-gap: 16px;        
+    }
+    .footer{
+        background: tomato;
+        grid-area: footer;
+    }
+
 }
