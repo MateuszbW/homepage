@@ -1,3 +1,4 @@
+  
 html {
   box-sizing: border-box;
 }
@@ -19,8 +20,7 @@ min-height: 100vh;
   min-height: 60px;  
   position: fixed;
   top: 0;
-  width: 100%;
-}
+  }
 
 .main__header{
   max-width: 1600px;
@@ -47,12 +47,12 @@ min-height: 100vh;
 
 }
 .hamburger{
-  position: absolute;
+  position: fixed;
   top: 19px;
   right: 25px;
   border: none;
   background: none;
-  ;
+  
 }
 
 h1 {
@@ -382,5 +382,15 @@ width: 100%;
     }
     .hamburger{
       display: none;
+    }
+    .header{
+      background: #fff;
+      min-height: 60px;  
+      position: fixed;
+      top: 0;
+      max-width: 1600px;
+    }
+    .navigation__link{
+      padding: 16px;
     }
   }

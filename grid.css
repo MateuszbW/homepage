@@ -10,6 +10,34 @@ body{
     
     
 }
+.main__header{
+    max-width: 1600px;
+    margin: 60px auto 0;  
+}
+  
+.navigation {
+    padding: 16px;
+    display: none;
+    margin: 0 0 20px;    
+}
+  
+.navigation__link {
+    color: #92140c;
+    display: block;
+    margin: 0 0 16px;
+}
+  
+.navigation--open{
+    display: block;
+}
+  
+.hamburger{
+    position: absolute;
+    top: 19px;
+    right: 25px;
+    border: none;
+    background: none;
+}
 
 .header{
     background: tomato;    
@@ -51,3 +79,25 @@ body{
     }
 
 }
+@media (min-width: 768px) {
+    .navigation{
+      padding: 16px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-around;
+      height: 100px;
+      align-items: center;
+      margin: 0 0 20px;
+    }
+    .main__header{
+      padding: 60px;
+    }
+    .header__navigation{
+      background: #fff;           
+      top: 0;
+      width: 100%;
+    }
+    .hamburger{
+      display: none;
+    }
+  }
