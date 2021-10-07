@@ -144,7 +144,7 @@
             <h2>Listy:</h2>
             <div class="box1-1">
                 <section>
-                <h4>Podstawowe listy:</h4>
+                <h4 class="title">Podstawowe listy:</h4>
                 <ul>
                     <li>UL- lista nieuporzątkowana</li>
                 </ul>
@@ -156,7 +156,7 @@
                 </ol>
                 </section>
                 <section>
-                    <h4>Zagnieżdżanie listy:</h4>
+                    <h4 class="title">Zagnieżdżanie listy:</h4>
                     <ul>
                         <li>Obieranie warzyw</li>
                         <li>Przyprawianie mięsa</li>
@@ -171,8 +171,8 @@
                     </ul>
                 </section>
                 <section>
-                    <h4>Inny rodzaj listy do dłuższego opisu: </h4>
-                    <h4>DL-description list, czyli inny rodzaj listy słóżący do wypisywania definicji bądź wskazówek</h4>
+                    <h4 class="title">Inny rodzaj listy do dłuższego opisu: </h4>
+                    <h4 class="title">DL-description list, czyli inny rodzaj listy słóżący do wypisywania definicji bądź wskazówek</h4>
                     <dl>                      
                         <dt>DT- </dt>
                         <dd>description term, czyli termin który chcemy opisać</dd>
@@ -232,7 +232,7 @@
         <form method="post" action="https://dev.cotenfrontend.pl" class="form">
             <p>
                 <label for="name">
-                    Your Name:                    
+                    Name:                    
                     <input 
                         required
                         class="form__item" 
@@ -243,10 +243,22 @@
                 </label>
             </p>
             <p>
+                <label for="name">
+                    riddle:                    
+                    <input 
+                        required
+                        class="form__item" 
+                        id="riddle" 
+                        placeholder="Enter this riddle" 
+                        name=""
+                    />
+                </label>
+            </p>
+            <p>
                 <label for="surName">
                     Your surname:                    
                     <input 
-                        pattern=""
+                        required
                         class="form__item" 
                         id="surname" 
                         placeholder="Enter Your surname" 
