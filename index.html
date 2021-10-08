@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Przypominajka WTF</title>
     <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="style.css" rel="stylesheet" type="text/css">      
     <!--czcionka nagłówka-->
     <link href='http://fonts.googleapis.com/css?family=Akaya+Kanadaka&subset=latin,latin-ext' rel='stylesheet'
         type='text/css'>
 
-</head>
+</head>  
 
 <body>
 <div class="box-primary">
@@ -86,14 +86,61 @@
             <div class="box1">
 
                 <div class="box3">
-                    W arkuszu html wpisz znak "!" a następnie tab. </br>
-                    Po tym pamiętaj by zmnienić język w jakim będzie wyświetlany tekst strony, tą możliwość znajdziesz
-                    tutaj:</br>
-                    &lt; html lang="pl"&gt; <strong>domyślnie nie będzie to "pl"</strong> .</br>
-                    W nagłówku &lt; head &gt; możesz wpisać:</br>
-                    <strong>&lt; link href="style.css" rel="stylesheet" type="text/css"&gt; </strong>,
-                    jest to odnośnik do arkusza stylów css w którym to będziemy dbali o to jak wyglda
-                    nasza strona.
+                    <ol>
+                       <li> W arkuszu html wpisz znak "!" a następnie tab.
+                           <ul>
+                               <li>Po tym pamiętaj by zmnienić język w jakim będzie wyświetlany tekst strony, tą możliwość znajdziesz
+                                tutaj: &lt; html lang="pl"&gt; <strong>domyślnie nie będzie to "pl"</strong></li>
+                                <li>W nagłówku &lt; head &gt; podaj ścieżkę do plików formatujących:</br>
+                                    &lt;link href=&quot;normalize.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</li>
+                           </ul>
+                        <li>Zakładamy nowe repozytorium na GitHub</li>
+                        <li>Tworzymy pliki w katalogu np:
+                            <ul>
+                                <li>index.html</li>
+                                <li>style.css</li>
+                                <li>main.js</li>
+                                <li>normalize.css</li>
+                                <li>main.scss</li>
+                            </ul>
+                        </li>
+                        <li>W konsoli wpisujemy:
+                            <ul>
+                                <li>Ścieżkę do katalogu na kompie (np. cd C:\dev\homepage)</li>
+                                <li>git init (zakładanie gita w katalogu)</li>
+                                <li>dir </li>
+                                <li>git status</li>
+                                <li>git add .</li>
+                                <li>git commit -m "..."</li>
+                                <li>Wklejamy komende z GitHub</li>
+                                <li>git push</li>
+                            </ul>
+                        </li>
+                        <li>W konsoli wpisujemy:
+                            <ul>
+                                <li>npm init -y</li>
+                                <li>npm install node-sass --save-dev (paczka node sass)</li>
+                                </ul>
+                        </li>
+                        <li>Utwórz plik .gitignore w katalogu
+                            <ul>
+                                <li>dodaj w nim node_modules</li>
+                            </ul>
+                        </li>
+                        <li>By pliki np main.scss zamieniał kod w main.css wpisz w konsoli:
+                            <ul>
+                                <li>npx node-sass main.scss main.css</li>
+                                <li> od teraz pisz kod wyłącznie w .scss!!! nie edytuj .css!!!</li>
+                                <li>W pliku package.json pod "scripts:"main.js dodaj:</li>
+                                <li>"sass": "npx node-sass -w style.scss style.css",</li>
+                                <li>Gdybyś miał ów plik w podkatalogu wtedy piszesz:</li>
+                                <li>"sass": "npx node-sass -w <b>nazwa podkatalogu</b>/main.scss main.css",</li>
+                                <li>Wpisz w konsoli komende: <b>npm run sass</b> by sprwdzić czy zadziałało /li>
+                                
+                            </ul>
+                        </li>
+                        <li>Podepnij plik .scss do html jak w punkcie 1.2</li>                       
+                    </ol>
                 </div>
 
             </div>
