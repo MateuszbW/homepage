@@ -70,8 +70,7 @@
                 </div>
 
                 <div class="box2">
-                    <strong>Po piąte:</strong> wyłącz TV, odstaw na bok fona, zwierzaka i inne rozpraszacze
-                    LENIU!
+                    <strong>Brak motywacji?</strong> Zajrzyj na oferty pracy na linkedin.
                 </div>
             </div>
             <div class="image">
@@ -112,14 +111,16 @@
                                 <li>git status</li>
                                 <li>git add .</li>
                                 <li>git commit -m "..."</li>
-                                <li>Wklejamy komende z GitHub</li>
+                                <li>Wklejamy komendę z GitHub</li>
                                 <li>git push</li>
                             </ul>
                         </li>
-                        <li>W konsoli wpisujemy:
+                        <li>Instalujemy jednorazowo paczkę node. W tym celu wchodzimy na nodejs.org 
+                            i pobieramy rekomendowaną paczkę, instalujemy. </li>
+                            <li>Po instalacji w konsoli wpisujemy:</li>
                             <ul>
                                 <li>npm init -y</li>
-                                <li>npm install node-sass --save-dev (paczka node sass)</li>
+                                <li>npm install node-sass --save-dev (paczka node sass, równiez instalacja jednorazowa)</li>
                                 </ul>
                         </li>
                         <li>Utwórz plik .gitignore w katalogu
@@ -135,12 +136,69 @@
                                 <li>"sass": "npx node-sass -w style.scss style.css",</li>
                                 <li>Gdybyś miał ów plik w podkatalogu wtedy piszesz:</li>
                                 <li>"sass": "npx node-sass -w <b>nazwa podkatalogu</b>/main.scss main.css",</li>
-                                <li>Wpisz w konsoli komende: <b>npm run sass</b> by sprwdzić czy zadziałało /li>
-                                
+                                <li>Wpisz w konsoli komendę: <b>npm run sass</b> by sprwdzić czy zadziałało <b>
+                                    Uruchom komendę za każdym razem gdy działasz na repozytorium!!!</b></li>                                
+                            </ul>
+                        </li>       
+                        <li>Stwórz plik normalize.css bądż zaimportuj go z zewnątrz (VII/2)</li>                                       
+                    </ol>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <h2>WEBPACK</h2>
+
+            <div class="box1">
+
+                <div class="box3">
+                    <ol>
+                       <li> Kopiowanie pakietu webpack z strony WTF (VII.05)
+                           <ul>
+                               <li>Mamy dostępny taki pakiet od WTF pod : <a href="https://github.com/maciejkorsan/wtf-webpack-starter/generate">linkiem</a>, pożniej oczywiście creating repozytory </li>
+                                <li> Skopiuj repozytorium tak jak zawsze z gita i z pomocą CMD ściągnij go do siebie. Ścieżka do nowego repa -> git clone [adres z gita]</li>
+                                <li>cd {nazwa katalogu}</li>
+                                <li>odpal edytor w cmd-> code .</li>
+                                <li>npm install</li>
+                                <li>npm run start</li>
+                                <li>Po tym standardowo powinieneś otworzyć stronę wpisując w przeglądarce standardowy adres: localhost:8080</li>
+                                <li>By wyjść z trybu kliknij ctrl+c</li>
+                                <li>ponowne wejście to npm run start </li>
+                                <li>doinstaluj katalog dist w cmd: npm run build </li>
+                           </ul>
+                        <li>Ścieżki do plików</li>
+                            <p>Podajemy je względem plików źródłowych (nie serwerowych).</p>
+                            <ul>
+                                <li>W katalogu src-> pages mamy pliki stron. W nich (np index.html) w części body->div podejemy adresy do plików.  </li>
+                                <li>Webpack sam znajdzie sobie ten plik dzięki wtyczce do html-a i spokiuje go do katalogu dist. Podczas kopiowania zmieniu mu nazwę aby ten plik był zawszę na "świeżo", by przeglądarka nie zapisała sobie starej wersji, pozwala to na poprawne ładownie strony</li>
+                                <li>Obrazki zawszę wrzucamy do katalogu assets-> img</li>
+                            </ul>                            
+                        </li>
+                        <li>Dodawanie plików
+                            <ul>
+                                <li>Gdy w folderze pages dodamy stronę (np: mateusz.html) musimy w pliku webpack.commoj.js skopiować <b>new HtmlWebpackPlugin</b> i w ścieżce podać nazwę pliku.</li>
+                                <li>w części <b>filname</b> zmień też nazwę pliku</li>
+                                <li>Zrestartuj serwer z pomocą: <b>ctrl+c</b> a następnie <b>npm run start</b> tak by widzieć stronę w przeglądarce</li>
+                                <li>By plik nie brał komend JS które wykonywane są na innych stronach utwórz nowy plik w <b> src-> js</b>  </li>
+                                <li>Następnie w pliku webpack.commoj.js w części <b> entry:</b> dodaj nasz plik html oraz ścieżkę do JS </li>
+                                <li>Później w <b>new HtmlWebpackPlugin</b> w części chunks tuż po "index" podejesz nazwe pliku JS  </li>
+                               
                             </ul>
                         </li>
-                        <li>Podepnij plik .scss do html jak w punkcie 1.2</li>                       
-                    </ol>
+                        <li>GitHub</li>                      
+                            <ul>
+                                <li>Pushing na Gita</li>
+                                <li>By uruchomić strone w GitHub-ie wchodzimy 
+                                    <ul>
+                                        <li>W CMD wpisujemy komende: npm run publish  </li>
+                                        <li>Ustawienia-> Sekcja GitHub Pages-> rozwijasz liste i wybierasz: gh-pages branch</li>
+                                        <li>Otwórz link poniżej (poczekaj chwile aż się załaduje)</li>
+                                    </ul>
+                                </li>
+                            </ul>                           
+                        </li>
+                        
+                        
                 </div>
 
             </div>

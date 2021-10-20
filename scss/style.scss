@@ -1,3 +1,4 @@
+@import"modules/navigation.scss";
 html {
     box-sizing: border-box;
   }
@@ -24,26 +25,7 @@ html {
     margin: 60px auto 0;
   }
   
-  .navigation {
-    padding: 16px;
-    display: none;
-    margin: 0 0 20px;
-    &__link {
-        color: #92140c;
-        display: block;
-        margin: 0 0 16px;
-    }
-    &__link:hover{
-    color: tomato;
-    }
-    &__link:visited{
-        color: gray;
-    }
-    &--open {
-        display: block;
-        }
-  }
-    
+ 
   .hamburger {
     position: fixed;
     top: 19px;
@@ -106,22 +88,22 @@ html {
     font-size: 20px;
     font-weight: 550;
     text-align: center;
+    &__description {
+      color: #0c0842;
+      font-family: "Lucida Sans Unicode";
+      font-size: 20px;
+      font-weight: 550;
+      text-align: center;
+    }
+    &__content {
+      color: #0c0842;
+      font-family: "Lucida Sans Unicode";
+      font-size: 20px;
+      font-weight: 550;
+      text-align: center;
+    }
   }
-  .js-text__description {
-    color: #0c0842;
-    font-family: "Lucida Sans Unicode";
-    font-size: 20px;
-    font-weight: 550;
-    text-align: center;
-  }
-  
-  .js-text__content {
-    color: #0c0842;
-    font-family: "Lucida Sans Unicode";
-    font-size: 20px;
-    font-weight: 550;
-    text-align: center;
-  }
+
   a {
     font-size: 20px;
   }
@@ -139,11 +121,7 @@ html {
     color: #1f0746;
   }
   
-  .photo-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
+  
   .photo {
     min-width: 350px;
     max-width: 500px;
@@ -151,6 +129,12 @@ html {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    &-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
   
   .photo img {
@@ -161,13 +145,14 @@ html {
     height: 100%;
     width: 100%;
     margin: 0%;
+    &img {
+      display: block;
+    
+      max-width: 100%;
+    }
   }
   
-  .image img {
-    display: block;
-  
-    max-width: 100%;
-  }
+
   
   .box-primary {
     max-width: 1600px;
@@ -264,22 +249,24 @@ html {
   
   .list-item {
     text-align: left;
+    &-item-none {
+      list-style: none;
+      margin: 0;
+    }
+    &-item-square {
+      list-style: square;
+    }
+    &-item-inne {
+      list-style: circle;
+    }
+    &-item-roman {
+      list-style: upper-roman;
+    }   
   }
+  
+  
   .list-none {
     list-style: none;
-  }
-  .list-item-none {
-    list-style: none;
-    margin: 0;
-  }
-  .list-item-square {
-    list-style: square;
-  }
-  .list-item-roman {
-    list-style: upper-roman;
-  }
-  .list-item-inne {
-    list-style: circle;
   }
   
   th {
@@ -334,16 +321,17 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &__item {
+      display: block;
+      justify-content: center;
+      width: 100%;
+    }
+    &__item:focus{
+      background:#9d97eb;
+    }
   }
   
-  .form__item {
-    display: block;
-    justify-content: center;
-    width: 100%;
-  }
-  .form__item:focus{
-    background:#9d97eb;
-  }
+ 
   
   .form label {
     display: block;

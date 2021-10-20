@@ -96,20 +96,18 @@ h5 {
   font-size: 20px;
   font-weight: 550;
   text-align: center; }
-
-.js-text__description {
-  color: #0c0842;
-  font-family: "Lucida Sans Unicode";
-  font-size: 20px;
-  font-weight: 550;
-  text-align: center; }
-
-.js-text__content {
-  color: #0c0842;
-  font-family: "Lucida Sans Unicode";
-  font-size: 20px;
-  font-weight: 550;
-  text-align: center; }
+  .js-text__description {
+    color: #0c0842;
+    font-family: "Lucida Sans Unicode";
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center; }
+  .js-text__content {
+    color: #0c0842;
+    font-family: "Lucida Sans Unicode";
+    font-size: 20px;
+    font-weight: 550;
+    text-align: center; }
 
 a {
   font-size: 20px; }
@@ -125,11 +123,6 @@ footer {
 #top {
   color: #1f0746; }
 
-.photo-box {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-
 .photo {
   min-width: 350px;
   max-width: 500px;
@@ -137,6 +130,10 @@ footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap; }
+  .photo-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
 
 .photo img {
   max-width: 350px; }
@@ -145,10 +142,9 @@ footer {
   height: 100%;
   width: 100%;
   margin: 0%; }
-
-.image img {
-  display: block;
-  max-width: 100%; }
+  .imageimg {
+    display: block;
+    max-width: 100%; }
 
 .box-primary {
   max-width: 1600px;
@@ -239,22 +235,18 @@ footer {
 
 .list-item {
   text-align: left; }
+  .list-item-item-none {
+    list-style: none;
+    margin: 0; }
+  .list-item-item-square {
+    list-style: square; }
+  .list-item-item-inne {
+    list-style: circle; }
+  .list-item-item-roman {
+    list-style: upper-roman; }
 
 .list-none {
   list-style: none; }
-
-.list-item-none {
-  list-style: none;
-  margin: 0; }
-
-.list-item-square {
-  list-style: square; }
-
-.list-item-roman {
-  list-style: upper-roman; }
-
-.list-item-inne {
-  list-style: circle; }
 
 th {
   border: 1px dotted black; }
@@ -307,14 +299,12 @@ table {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
-
-.form__item {
-  display: block;
-  justify-content: center;
-  width: 100%; }
-
-.form__item:focus {
-  background: #9d97eb; }
+  .form__item {
+    display: block;
+    justify-content: center;
+    width: 100%; }
+  .form__item:focus {
+    background: #9d97eb; }
 
 .form label {
   display: block; }
